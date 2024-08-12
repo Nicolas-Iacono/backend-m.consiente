@@ -3,7 +3,9 @@ const dotenv = require('dotenv');
 
 const allowedOrigins = [
   process.env.FRONT_URL,
-  'http://localhost:3000'
+  'http://localhost:3000',
+  'https://backend-m-consiente.onrender.com/api/user',
+  'https://movimiento-consiente-q6fp.onrender.com'
 ];
 
 const corsOptions = {
