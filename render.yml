@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: backend
+    env: node
+    plan: free
+    rootDir: .
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DB_HOST
+        value: dpg-cqkj9ml6l47c73860emg-a # Actualiza con la URL correcta de la base de datos
+      - key: DB_PORT
+        value: 5432
+      - key: DB_DATABASE
+        value: dbmconsiente
+      - key: DB_USER
+        value: dbmconsiente_user
+      - key: DB_PASSWORD
+        value: IoDBzEDG27vbaT0eOuPI8ykqBFtkLF4H
