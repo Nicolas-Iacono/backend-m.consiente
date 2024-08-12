@@ -7,11 +7,11 @@ dotenv.config();
 // Crear una instancia de Sequelize
 const sequelize = new Sequelize(
   process.env.DB_NAME || 'dbmconsiente',
-  process.env.DB_USER || 'root',
-  process.env.DB_PASSWORD || 'root',
+  process.env.DB_USER || 'dbmconsiente_user',
+  process.env.DB_PASSWORD || 'IoDBzEDG27vbaT0eOuPI8ykqBFtkLF4H',
   {
-    host: process.env.DB_HOST || 'localhost',
-    dialect: process.env.DB_DIALECT || 'mysql',
+    host: process.env.DB_HOST || 'dpg-cqkj9ml6l47c73860emg-a.ohio-postgres.render.com',
+    dialect: process.env.DB_DIALECT || 'postgres',
     port: process.env.DB_PORT ? parseInt(process.env.DB_PORT) : 5432, dialectOptions: {
       ssl: {
         require: true, // Esto es importante si tu base de datos requiere SSL

@@ -1,7 +1,8 @@
 const cors = require('cors');
+const dotenv = require('dotenv');
 
 const allowedOrigins = [
-  'https://movimiento-consiente.onrender.com',
+  process.env.FRONT_URL,
   'http://localhost:3000'
 ];
 
